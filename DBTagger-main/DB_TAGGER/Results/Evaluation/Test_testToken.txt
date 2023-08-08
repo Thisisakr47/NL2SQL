@@ -1,0 +1,1 @@
+Find name , movie , birthdates , place , nationality from actorsfind all actors

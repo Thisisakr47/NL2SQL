@@ -1,0 +1,2 @@
+O person.name O movie O person.name O person.birth_city O person.nationality O actor
+O O actor COND person.birth_city person.birth_city

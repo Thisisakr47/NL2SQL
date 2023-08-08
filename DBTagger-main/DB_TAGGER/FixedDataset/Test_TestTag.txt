@@ -1,0 +1,2 @@
+Find/O/ name/O/ ,/O/ movie/O/ ,/O/ birthdates/O/ ,/O/ place/O/ ,/O/ nationality/O/ from/O/ actors/O/
+find/O/ all/O/ actors/O/

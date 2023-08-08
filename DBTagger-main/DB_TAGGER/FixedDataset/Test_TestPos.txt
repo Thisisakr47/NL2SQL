@@ -1,0 +1,2 @@
+Find/VB/ name/NN/ ,/,/ movie/NN/ ,/,/ birthdates/NNS/ ,/,/ place/NN/ ,/,/ nationality/NN/ from/IN/ actors/NNS/
+find/VB/ all/DT/ actors/NNS/

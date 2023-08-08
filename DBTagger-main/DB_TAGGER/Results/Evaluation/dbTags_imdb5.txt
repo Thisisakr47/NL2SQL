@@ -1,0 +1,44 @@
+O O movie O O O O director O person.name person.name O cast person.name person.name O
+
+O cast O cast O movie.release_year person.name
+
+O actor O O COND person.birth_city
+
+O O director O O movie O O person.name person.name O O cast
+
+O O person.gender director O cast O O company.name tv_series
+
+O O person.birth_year O person.name person.name O O
+
+O O movie O company.name O O
+
+O O O actor O COND person.birth_city person.birth_city person.birth_city COND person.birth_year O
+
+O movie.release_year O O movie movie.title movie.title movie.title O
+
+O O O person.nationality O O actor person.name person.name O
+
+O O movie O person.name person.name O COND movie.release_year O
+
+O O movie directed_by O person.name person.name COND movie.release_year
+
+O O O person.birth_year O O person.name person.name
+
+O O O O director O movie.title movie.title
+
+O O movie cast person.name person.name
+
+O O O tv_series cast person.name person.name O
+
+O actor cast.role cast.role COND O tv_series tv_series.title O
+
+O O O O movie directed_by O person.name person.name cast person.name person.name O
+
+O O O O actor COND O movie movie.title movie.title -PAD-
+
+O O O COND movie O person.name person.name
+
+O O O person.gender actor COND person.birth_city
+
+O director O cast O O O O O director O
+
