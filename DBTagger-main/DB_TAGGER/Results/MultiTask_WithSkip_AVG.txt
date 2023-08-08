@@ -1,0 +1,42 @@
+Schema: imdb
+
+Dropout: 0.5-BS:32
+
+**************************
+Accuracy:0.7146168753276302
+F1-Score:0.4199363090629069
+
+**************************
+word based rel acc: 0.2233842839004269
+sentence based rel acc: 0.06845238095238095
+word based non-rel acc: 0.37167439109170525
+sentence based non-rel acc: 0.2819264069264069
+**************************
+Schema: imdb
+
+Dropout: 0.5-BS:32
+
+**************************
+Accuracy:0.8547722123111897
+F1-Score:0.7089579394569571
+
+**************************
+word based rel acc: 0.4893736576489545
+sentence based rel acc: 0.3471320346320346
+word based non-rel acc: 0.535710564341847
+sentence based non-rel acc: 0.4101731601731602
+**************************
+Schema: imdb
+
+Dropout: 0.5-BS:32
+
+**************************
+Accuracy:0.9319857685872311
+F1-Score:0.8636731852295386
+
+**************************
+word based rel acc: 0.6453143411224188
+sentence based rel acc: 0.5781926406926406
+word based non-rel acc: 0.6616470278571912
+sentence based non-rel acc: 0.5976731601731601
+**************************

@@ -1,0 +1,44 @@
+O O movie O O company.name
+
+O O movie O O person.name person.name cast
+
+O company copyright O person.name person.name tv_series
+
+O O movie O director O COND person.birth_city person.birth_city
+
+O O movie O keyword.keyword keyword.keyword
+
+O O actor O O COND person.birth_city person.birth_city COND movie.release_year O
+
+O O movie O O COND O movie.release_year movie.release_year O
+
+O O O O O movie directed_by O person.name person.name O movie.release_year O
+
+O O movie O O copyright O person.name person.name
+
+O O movie directed_by O person.name person.name O cast person.name person.name
+
+O O movie cast person.name person.name
+
+O O actor O cast person.name person.name COND O movie movie.title movie.title movie.title
+
+O O O person.nationality O O actor person.name person.name O
+
+O O movie cast person.name person.name O person.name person.name
+
+O O director O O movie cast person.name person.name
+
+O O directed_by O COND movie O company.name
+
+O O movie O O person.name person.name
+
+O O O O movie O cast COND movie.release_year
+
+O O movie O person.name person.name directed_by O
+
+O O movie O O person.name person.name COND movie.release_year
+
+O O O O company O copyright O person.name person.name
+
+O O movie O O person.name person.name cast O cast.role cast.role
+
