@@ -1,0 +1,15 @@
+__pycache__
+.vscode
+parser
+
+DBTagger-main\DB_TAGGER/node_modules
+DBTagger-main\DB_TAGGER/.vscode
+DBTagger-main\DB_TAGGER/__pycache__
+
+client/node_modules
+client/.vscode
+client/__pycache__
+
+server/node_modules
+server/.vscode
+server/__pycache__
