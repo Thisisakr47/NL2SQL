@@ -2,9 +2,13 @@ __pycache__
 .vscode
 parser
 
-DBTagger-main\DB_TAGGER/node_modules
-DBTagger-main\DB_TAGGER/.vscode
-DBTagger-main\DB_TAGGER/__pycache__
+models/DB_TAGGER/node_modules
+models/DB_TAGGER/.vscode
+models/DB_TAGGER/__pycache__
+
+models/text-davinci-003/node_modules
+models/text-davinci-003/.vscode
+models/text-davinci-003/__pycache__
 
 client/node_modules
 client/.vscode
