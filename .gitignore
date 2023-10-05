@@ -10,6 +10,9 @@ models/text-davinci-003/node_modules
 models/text-davinci-003/.vscode
 models/text-davinci-003/__pycache__
 
+models/slsql/corenlp/
+models/slsql/output/
+
 client/node_modules
 client/.vscode
 client/__pycache__
