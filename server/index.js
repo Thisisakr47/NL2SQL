@@ -10,7 +10,7 @@ app.use(express.json());
 //routers
 app.get("/databases", async (req, res) => {
   try {
-    const alldb = await pool.query("SELECT datname FROM pg_database;");
+    const alldb = await pool.query(`SELECT datname FROM pg_database;`);
     res.json(alldb.rows);
   } catch (error) {
     console.error(error.message);
@@ -20,7 +20,7 @@ app.get("/databases", async (req, res) => {
 app.get("/databases/tables", async (req, res) => {
   try {
     const allTables = await pool.query(
-      "SELECT * FROM information_schema.tables WHERE table_schema = 'public';"
+      `SELECT * FROM information_schema.tables WHERE table_schema = 'public';`
     );
     res.json(allTables.rows);
   } catch (error) {
@@ -30,9 +30,8 @@ app.get("/databases/tables", async (req, res) => {
 
 app.get("/databases/tables/records", async (req, res) => {
   try {
-    console.log(req.query.tableName);
     const table = req.query.tableName;
-    const Query = "SELECT * FROM " + table + " LIMIT 10";
+    const Query = `SELECT * FROM ${table} LIMIT 10`;
     const allRecords = await pool.query(Query);
     res.json(allRecords.rows);
   } catch (error) {
@@ -42,17 +41,12 @@ app.get("/databases/tables/records", async (req, res) => {
 
 app.get("/input", async (req, res) => {
   try {
-    console.log(req.query.sendInput);
     const enteredQuery = req.query.sendInput;
     const allRecords = await pool.query(enteredQuery);
-    //console.log(allRecords);
     res.json(allRecords.rows);
-    //console.log(res);
   } catch (error) {
     console.error(error.message);
   }
 });
 
-app.listen(5000, () => {
-  //console.log("hello");
-});
+app.listen(5000, () => {});
