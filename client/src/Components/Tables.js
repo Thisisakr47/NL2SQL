@@ -6,7 +6,7 @@ const Tables = (props) => {
 
   const clickHandler = async () => {
     try {
-      const url = "http://localhost:5000/databases/tables/records";
+      const url = "https://render-nl2sql.onrender.com/databases/tables/records";
       const response = await axios.get(url, {
         params: {
           tableName: props.name,

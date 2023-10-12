@@ -6,7 +6,7 @@ const ListAll = () => {
 
   const getData = async () => {
     try {
-      const response = await fetch("http://localhost:5000/databases");
+      const response = await fetch("https://render-nl2sql.onrender.com/databases");
       const jsonData = await response.json();
 
       setData(jsonData);

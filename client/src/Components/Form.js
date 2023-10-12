@@ -15,7 +15,7 @@ const Form = () => {
     event.preventDefault();
 
     axios
-      .get("http://localhost:5000/input", {
+      .get("https://render-nl2sql.onrender.com/input", {
         params: {
           sendInput: enteredInput,
         },

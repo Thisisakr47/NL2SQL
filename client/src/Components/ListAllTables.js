@@ -6,7 +6,7 @@ const ListAllTables = () => {
 
   const getTables = async () => {
     try {
-      const response = await fetch("http://localhost:5000/databases/tables");
+      const response = await fetch("https://render-nl2sql.onrender.com/databases/tables");
       const jsonData = await response.json();
 
       setTables(jsonData);
