@@ -14,6 +14,7 @@ models/slsql/corenlp/
 models/slsql/output/
 
 client/node_modules
+client/build
 client/.vscode
 client/__pycache__
 
