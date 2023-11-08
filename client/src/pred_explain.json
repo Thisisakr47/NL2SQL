@@ -1,0 +1,1167 @@
+[
+    {
+        "id": 0,
+        "links": [
+            [
+                "How",
+                null,
+                null
+            ],
+            [
+                "many",
+                null,
+                null
+            ],
+            [
+                "singers",
+                {
+                    "agg": [
+                        "count"
+                    ],
+                    "func": [],
+                    "id": 1,
+                    "scope": "main",
+                    "type": "tbl"
+                },
+                [
+                    23,
+                    "singer",
+                    "tbl"
+                ]
+            ],
+            [
+                "do",
+                null,
+                null
+            ],
+            [
+                "we",
+                null,
+                null
+            ],
+            [
+                "have",
+                null,
+                null
+            ],
+            [
+                "?",
+                null,
+                null
+            ]
+        ],
+        "query": "SELECT count(*) FROM singer",
+        "question": "How many singers do we have?",
+        "sql": "SELECT count( * ) FROM singer"
+    },
+    {
+        "id": 1,
+        "links": [
+            [
+                "What",
+                null,
+                null
+            ],
+            [
+                "is",
+                null,
+                null
+            ],
+            [
+                "the",
+                null,
+                null
+            ],
+            [
+                "total",
+                null,
+                null
+            ],
+            [
+                "number",
+                null,
+                null
+            ],
+            [
+                "of",
+                null,
+                null
+            ],
+            [
+                "singers",
+                {
+                    "agg": [
+                        "count"
+                    ],
+                    "func": [],
+                    "id": 1,
+                    "scope": "main",
+                    "type": "tbl"
+                },
+                [
+                    23,
+                    "singer",
+                    "tbl"
+                ]
+            ],
+            [
+                "?",
+                null,
+                null
+            ]
+        ],
+        "query": "SELECT count(*) FROM singer",
+        "question": "What is the total number of singers?",
+        "sql": "SELECT count( * ) FROM singer"
+    },
+    {
+        "id": 6,
+        "links": [
+            [
+                "Show",
+                null,
+                null
+            ],
+            [
+                "the",
+                null,
+                null
+            ],
+            [
+                "name",
+                {
+                    "agg": [],
+                    "func": [
+                        "sel"
+                    ],
+                    "id": 11,
+                    "scope": "main",
+                    "type": "col"
+                },
+                [
+                    11,
+                    "singer [#] song name",
+                    "col"
+                ]
+            ],
+            [
+                "and",
+                null,
+                null
+            ],
+            [
+                "the",
+                null,
+                null
+            ],
+            [
+                "release",
+                {
+                    "agg": [],
+                    "func": [
+                        "sel"
+                    ],
+                    "id": 12,
+                    "scope": "main",
+                    "type": "col"
+                },
+                [
+                    12,
+                    "singer [#] song release year",
+                    "col"
+                ]
+            ],
+            [
+                "year",
+                {
+                    "agg": [],
+                    "func": [
+                        "sel"
+                    ],
+                    "id": 12,
+                    "scope": "main",
+                    "type": "col"
+                },
+                [
+                    12,
+                    "singer [#] song release year",
+                    "col"
+                ]
+            ],
+            [
+                "of",
+                null,
+                null
+            ],
+            [
+                "the",
+                null,
+                null
+            ],
+            [
+                "song",
+                null,
+                [
+                    23,
+                    "singer",
+                    "tbl"
+                ]
+            ],
+            [
+                "by",
+                null,
+                null
+            ],
+            [
+                "the",
+                null,
+                null
+            ],
+            [
+                "youngest",
+                null,
+                null
+            ],
+            [
+                "singer",
+                {
+                    "agg": [],
+                    "func": [],
+                    "id": 1,
+                    "scope": "main",
+                    "type": "tbl"
+                },
+                [
+                    23,
+                    "singer",
+                    "tbl"
+                ]
+            ],
+            [
+                ".",
+                null,
+                null
+            ]
+        ],
+        "query": "SELECT song_name ,  song_release_year FROM singer ORDER BY age LIMIT 1",
+        "question": "Show the name and the release year of the song by the youngest singer.",
+        "sql": "SELECT singer.Song_Name , singer.Song_release_year FROM singer ORDER BY singer.Age asc LIMIT 1"
+    },
+    {
+        "id": 7,
+        "links": [
+            [
+                "What",
+                null,
+                null
+            ],
+            [
+                "are",
+                null,
+                null
+            ],
+            [
+                "the",
+                null,
+                null
+            ],
+            [
+                "names",
+                {
+                    "agg": [],
+                    "func": [
+                        "sel"
+                    ],
+                    "id": 11,
+                    "scope": "main",
+                    "type": "col"
+                },
+                [
+                    11,
+                    "singer [#] song name",
+                    "col"
+                ]
+            ],
+            [
+                "and",
+                null,
+                null
+            ],
+            [
+                "release",
+                {
+                    "agg": [],
+                    "func": [
+                        "sel"
+                    ],
+                    "id": 12,
+                    "scope": "main",
+                    "type": "col"
+                },
+                [
+                    12,
+                    "singer [#] song release year",
+                    "col"
+                ]
+            ],
+            [
+                "years",
+                {
+                    "agg": [],
+                    "func": [
+                        "sel"
+                    ],
+                    "id": 12,
+                    "scope": "main",
+                    "type": "col"
+                },
+                [
+                    12,
+                    "singer [#] song release year",
+                    "col"
+                ]
+            ],
+            [
+                "for",
+                null,
+                null
+            ],
+            [
+                "all",
+                null,
+                null
+            ],
+            [
+                "the",
+                null,
+                null
+            ],
+            [
+                "songs",
+                null,
+                [
+                    23,
+                    "singer",
+                    "tbl"
+                ]
+            ],
+            [
+                "of",
+                null,
+                null
+            ],
+            [
+                "the",
+                null,
+                null
+            ],
+            [
+                "youngest",
+                null,
+                null
+            ],
+            [
+                "singer",
+                {
+                    "agg": [],
+                    "func": [],
+                    "id": 1,
+                    "scope": "main",
+                    "type": "tbl"
+                },
+                [
+                    23,
+                    "singer",
+                    "tbl"
+                ]
+            ],
+            [
+                "?",
+                null,
+                null
+            ]
+        ],
+        "query": "SELECT song_name ,  song_release_year FROM singer ORDER BY age LIMIT 1",
+        "question": "What are the names and release years for all the songs of the youngest singer?",
+        "sql": "SELECT singer.Song_Name , singer.Song_release_year FROM singer ORDER BY singer.Age asc LIMIT 1"
+    },
+    {
+        "id": 10,
+        "links": [
+            [
+                "Show",
+                null,
+                null
+            ],
+            [
+                "all",
+                null,
+                null
+            ],
+            [
+                "countries",
+                {
+                    "agg": [],
+                    "func": [
+                        "sel"
+                    ],
+                    "id": 10,
+                    "scope": "main",
+                    "type": "col"
+                },
+                [
+                    10,
+                    "singer [#] country",
+                    "col"
+                ]
+            ],
+            [
+                "and",
+                null,
+                null
+            ],
+            [
+                "the",
+                null,
+                null
+            ],
+            [
+                "number",
+                null,
+                null
+            ],
+            [
+                "of",
+                null,
+                null
+            ],
+            [
+                "singers",
+                {
+                    "agg": [
+                        "count"
+                    ],
+                    "func": [],
+                    "id": 1,
+                    "scope": "main",
+                    "type": "tbl"
+                },
+                [
+                    23,
+                    "singer",
+                    "tbl"
+                ]
+            ],
+            [
+                "in",
+                null,
+                null
+            ],
+            [
+                "each",
+                null,
+                null
+            ],
+            [
+                "country",
+                {
+                    "agg": [],
+                    "func": [
+                        "group",
+                        "sel"
+                    ],
+                    "id": 10,
+                    "scope": "main",
+                    "type": "col"
+                },
+                [
+                    10,
+                    "singer [#] country",
+                    "col"
+                ]
+            ],
+            [
+                ".",
+                null,
+                null
+            ]
+        ],
+        "query": "SELECT country ,  count(*) FROM singer GROUP BY country",
+        "question": "Show all countries and the number of singers in each country.",
+        "sql": "SELECT singer.Country , count( * ) FROM singer GROUP BY singer.Country"
+    },
+    {
+        "id": 11,
+        "links": [
+            [
+                "How",
+                null,
+                null
+            ],
+            [
+                "many",
+                null,
+                null
+            ],
+            [
+                "singers",
+                {
+                    "agg": [
+                        "count"
+                    ],
+                    "func": [],
+                    "id": 1,
+                    "scope": "main",
+                    "type": "tbl"
+                },
+                [
+                    23,
+                    "singer",
+                    "tbl"
+                ]
+            ],
+            [
+                "are",
+                null,
+                null
+            ],
+            [
+                "from",
+                null,
+                null
+            ],
+            [
+                "each",
+                null,
+                null
+            ],
+            [
+                "country",
+                {
+                    "agg": [],
+                    "func": [
+                        "sel",
+                        "group"
+                    ],
+                    "id": 10,
+                    "scope": "main",
+                    "type": "col"
+                },
+                [
+                    10,
+                    "singer [#] country",
+                    "col"
+                ]
+            ],
+            [
+                "?",
+                null,
+                null
+            ]
+        ],
+        "query": "SELECT country ,  count(*) FROM singer GROUP BY country",
+        "question": "How many singers are from each country?",
+        "sql": "SELECT singer.Country , count( * ) FROM singer GROUP BY singer.Country"
+    },
+    {
+        "id": 12,
+        "links": [
+            [
+                "List",
+                null,
+                null
+            ],
+            [
+                "all",
+                null,
+                null
+            ],
+            [
+                "song",
+                {
+                    "agg": [],
+                    "func": [
+                        "sel"
+                    ],
+                    "id": 11,
+                    "scope": "main",
+                    "type": "col"
+                },
+                [
+                    23,
+                    "singer",
+                    "tbl"
+                ]
+            ],
+            [
+                "names",
+                {
+                    "agg": [],
+                    "func": [
+                        "sel"
+                    ],
+                    "id": 11,
+                    "scope": "main",
+                    "type": "col"
+                },
+                [
+                    11,
+                    "singer [#] song name",
+                    "col"
+                ]
+            ],
+            [
+                "by",
+                null,
+                null
+            ],
+            [
+                "singers",
+                {
+                    "agg": [],
+                    "func": [],
+                    "id": 1,
+                    "scope": "main",
+                    "type": "tbl"
+                },
+                [
+                    23,
+                    "singer",
+                    "tbl"
+                ]
+            ],
+            [
+                "above",
+                null,
+                null
+            ],
+            [
+                "the",
+                null,
+                null
+            ],
+            [
+                "average",
+                null,
+                null
+            ],
+            [
+                "age",
+                {
+                    "agg": [
+                        "avg"
+                    ],
+                    "func": [
+                        "sel"
+                    ],
+                    "id": 13,
+                    "scope": "sub",
+                    "type": "col"
+                },
+                [
+                    13,
+                    "singer [#] age",
+                    "col"
+                ]
+            ],
+            [
+                ".",
+                null,
+                null
+            ]
+        ],
+        "query": "SELECT song_name FROM singer WHERE age  >  (SELECT avg(age) FROM singer)",
+        "question": "List all song names by singers above the average age.",
+        "sql": "SELECT singer.Song_Name FROM singer WHERE singer.Age > ( SELECT avg( singer.Age ) FROM singer )"
+    },
+    {
+        "id": 16,
+        "links": [
+            [
+                "What",
+                null,
+                null
+            ],
+            [
+                "is",
+                null,
+                null
+            ],
+            [
+                "the",
+                null,
+                null
+            ],
+            [
+                "maximum",
+                null,
+                null
+            ],
+            [
+                "capacity",
+                null,
+                [
+                    4,
+                    "stadium [#] capacity",
+                    "col"
+                ]
+            ],
+            [
+                "and",
+                null,
+                null
+            ],
+            [
+                "the",
+                null,
+                null
+            ],
+            [
+                "average",
+                {
+                    "agg": [
+                        "max",
+                        "avg"
+                    ],
+                    "func": [
+                        "sel"
+                    ],
+                    "id": 4,
+                    "scope": "main",
+                    "type": "col"
+                },
+                null
+            ],
+            [
+                "of",
+                null,
+                null
+            ],
+            [
+                "all",
+                null,
+                null
+            ],
+            [
+                "stadiums",
+                {
+                    "agg": [],
+                    "func": [],
+                    "id": 0,
+                    "scope": "main",
+                    "type": "tbl"
+                },
+                [
+                    22,
+                    "stadium",
+                    "tbl"
+                ]
+            ],
+            [
+                "?",
+                null,
+                null
+            ]
+        ],
+        "query": "select max(capacity), average from stadium",
+        "question": "What is the maximum capacity and the average of all stadiums ?",
+        "sql": "SELECT max( stadium.Capacity ) , avg( stadium.Capacity ) FROM stadium"
+    },
+    {
+        "id": 18,
+        "links": [
+            [
+                "What",
+                null,
+                null
+            ],
+            [
+                "is",
+                null,
+                null
+            ],
+            [
+                "the",
+                null,
+                null
+            ],
+            [
+                "name",
+                {
+                    "agg": [],
+                    "func": [
+                        "sel"
+                    ],
+                    "id": 3,
+                    "scope": "main",
+                    "type": "col"
+                },
+                [
+                    3,
+                    "stadium [#] name",
+                    "col"
+                ]
+            ],
+            [
+                "and",
+                null,
+                null
+            ],
+            [
+                "capacity",
+                {
+                    "agg": [],
+                    "func": [
+                        "sel"
+                    ],
+                    "id": 4,
+                    "scope": "main",
+                    "type": "col"
+                },
+                [
+                    4,
+                    "stadium [#] capacity",
+                    "col"
+                ]
+            ],
+            [
+                "for",
+                null,
+                null
+            ],
+            [
+                "the",
+                null,
+                null
+            ],
+            [
+                "stadium",
+                {
+                    "agg": [],
+                    "func": [],
+                    "id": 0,
+                    "scope": "main",
+                    "type": "tbl"
+                },
+                [
+                    22,
+                    "stadium",
+                    "tbl"
+                ]
+            ],
+            [
+                "with",
+                null,
+                null
+            ],
+            [
+                "highest",
+                null,
+                null
+            ],
+            [
+                "average",
+                {
+                    "agg": [],
+                    "func": [
+                        "desc-order"
+                    ],
+                    "id": 7,
+                    "scope": "main",
+                    "type": "col"
+                },
+                null
+            ],
+            [
+                "attendance",
+                null,
+                [
+                    7,
+                    "stadium [#] average",
+                    "col"
+                ]
+            ],
+            [
+                "?",
+                null,
+                null
+            ]
+        ],
+        "query": "SELECT name ,  capacity FROM stadium ORDER BY average DESC LIMIT 1",
+        "question": "What is the name and capacity for the stadium with highest average attendance?",
+        "sql": "SELECT stadium.Name , stadium.Capacity FROM stadium ORDER BY stadium.Capacity desc LIMIT 1"
+    },
+    {
+        "id": 22,
+        "links": [
+            [
+                "Show",
+                null,
+                null
+            ],
+            [
+                "the",
+                null,
+                null
+            ],
+            [
+                "stadium",
+                {
+                    "agg": [
+                        "count"
+                    ],
+                    "func": [],
+                    "id": 0,
+                    "scope": "main",
+                    "type": "tbl"
+                },
+                [
+                    22,
+                    "stadium",
+                    "tbl"
+                ]
+            ],
+            [
+                "name",
+                {
+                    "agg": [],
+                    "func": [
+                        "sel"
+                    ],
+                    "id": 3,
+                    "scope": "main",
+                    "type": "col"
+                },
+                [
+                    3,
+                    "stadium [#] name",
+                    "col"
+                ]
+            ],
+            [
+                "and",
+                null,
+                null
+            ],
+            [
+                "the",
+                null,
+                null
+            ],
+            [
+                "number",
+                null,
+                null
+            ],
+            [
+                "of",
+                null,
+                null
+            ],
+            [
+                "concerts",
+                {
+                    "agg": [
+                        "count"
+                    ],
+                    "func": [],
+                    "id": 2,
+                    "scope": "main",
+                    "type": "tbl"
+                },
+                [
+                    24,
+                    "concert",
+                    "tbl"
+                ]
+            ],
+            [
+                "in",
+                null,
+                null
+            ],
+            [
+                "each",
+                null,
+                null
+            ],
+            [
+                "stadium",
+                {
+                    "agg": [
+                        "count"
+                    ],
+                    "func": [
+                        "group"
+                    ],
+                    "id": 0,
+                    "scope": "main",
+                    "type": "tbl"
+                },
+                [
+                    22,
+                    "stadium",
+                    "tbl"
+                ]
+            ],
+            [
+                ".",
+                null,
+                null
+            ]
+        ],
+        "query": "SELECT T2.name ,  count(*) FROM concert AS T1 JOIN stadium AS T2 ON T1.stadium_id  =  T2.stadium_id GROUP BY T1.stadium_id",
+        "question": "Show the stadium name and the number of concerts in each stadium.",
+        "sql": "SELECT stadium.Name , count( * ) FROM stadium JOIN concert  on concert.Stadium_ID = stadium.Stadium_ID  GROUP BY concert.Stadium_ID"
+    },
+    {
+        "id": 26,
+        "links": [
+            [
+                "Which",
+                null,
+                null
+            ],
+            [
+                "year",
+                {
+                    "agg": [],
+                    "func": [
+                        "sel"
+                    ],
+                    "id": 19,
+                    "scope": "main",
+                    "type": "col"
+                },
+                [
+                    19,
+                    "concert [#] year",
+                    "col"
+                ]
+            ],
+            [
+                "has",
+                null,
+                null
+            ],
+            [
+                "most",
+                null,
+                null
+            ],
+            [
+                "number",
+                null,
+                null
+            ],
+            [
+                "of",
+                null,
+                null
+            ],
+            [
+                "concerts",
+                {
+                    "agg": [],
+                    "func": [],
+                    "id": 2,
+                    "scope": "main",
+                    "type": "tbl"
+                },
+                [
+                    24,
+                    "concert",
+                    "tbl"
+                ]
+            ],
+            [
+                "?",
+                null,
+                null
+            ]
+        ],
+        "query": "SELECT YEAR FROM concert GROUP BY YEAR ORDER BY count(*) DESC LIMIT 1",
+        "question": "Which year has most number of concerts?",
+        "sql": "SELECT concert.Year FROM concert GROUP BY concert.Year ORDER BY count( * ) desc LIMIT 1"
+    },
+    {
+        "id": 27,
+        "links": [
+            [
+                "What",
+                null,
+                null
+            ],
+            [
+                "is",
+                null,
+                null
+            ],
+            [
+                "the",
+                null,
+                null
+            ],
+            [
+                "year",
+                {
+                    "agg": [],
+                    "func": [
+                        "sel"
+                    ],
+                    "id": 19,
+                    "scope": "main",
+                    "type": "col"
+                },
+                [
+                    19,
+                    "concert [#] year",
+                    "col"
+                ]
+            ],
+            [
+                "that",
+                null,
+                null
+            ],
+            [
+                "had",
+                null,
+                null
+            ],
+            [
+                "the",
+                null,
+                null
+            ],
+            [
+                "most",
+                null,
+                null
+            ],
+            [
+                "concerts",
+                {
+                    "agg": [],
+                    "func": [],
+                    "id": 2,
+                    "scope": "main",
+                    "type": "tbl"
+                },
+                [
+                    24,
+                    "concert",
+                    "tbl"
+                ]
+            ],
+            [
+                "?",
+                null,
+                null
+            ]
+        ],
+        "query": "SELECT YEAR FROM concert GROUP BY YEAR ORDER BY count(*) DESC LIMIT 1",
+        "question": "What is the year that had the most concerts?",
+        "sql": "SELECT concert.Year FROM concert GROUP BY concert.Year ORDER BY count( * ) desc LIMIT 1"
+    }
+]
