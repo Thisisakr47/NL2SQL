@@ -18,7 +18,7 @@ const ListAll = () => {
 
   return (
     <Fragment>
-      <button onClick={getData}>Databases</button>
+      <button className="btn btn-outline-success btn-sm mb-3" onClick={getData}>Databases</button>
       {data.map((element) => (
         <Database name={element.datname} key={element.datname} />
       ))}

@@ -15,7 +15,7 @@ const Database = (props) =>{
 
     return(
         <Fragment>
-             <button onClick={clickHandler}>
+             <button className="btn btn-outline-primary btn-sm mt-2" onClick={clickHandler}>
                 {props.name}
             </button>
         </Fragment> 

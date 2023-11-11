@@ -24,7 +24,7 @@ const Tables = (props) => {
 
   return (
     <Fragment>
-      <button onClick={clickHandler}>{props.name}</button>
+      <div className="d-flex justify-content-center"><button className="btn btn-outline-primary btn-sm mt-2" onClick={clickHandler}>{props.name}</button></div>
       <tbody>
         {records.map((item) => (
           <tr key={item.id}>
