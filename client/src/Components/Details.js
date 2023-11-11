@@ -16,8 +16,9 @@ function Details() {
       }
       row.push(<div className='d-flex mb-3'>{col}</div>)
       row.push(<p><br></br>Query : {jsonParse[index]['query']}</p>);
-      row.push(<p key={index}>Question : {jsonParse[index]['question']}</p>);
-      row.push(<p key={index}>Predicted SQL : {jsonParse[index]['sql']}<br></br><hr></hr></p>);
+      row.push(<p>Question : {jsonParse[index]['question']}</p>);
+      row.push(<p>Predicted SQL : {jsonParse[index]['sql']}<br></br></p>);
+      row.push(<hr/>)
     }  
 
   return (

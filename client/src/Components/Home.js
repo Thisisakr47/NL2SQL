@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import HomeContent from './HomeContent';
 import Details from './Details';
 
 function Home() {
+    const [currentPage, setCurrentPage] = useState('/');
 
-    const doReset = () => {
-        window.location.href = '/';
+    const changePath = (page) => {
+        setCurrentPage(page);
+        console.log(currentPage)
     };
 
     return (
@@ -15,17 +17,16 @@ function Home() {
             <div className="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item active">
-                        <a class="nav-link" href='/'>Home</a>
+                        <button className="nav-link" onClick={() => changePath('/')}>Home</button>
                     </li>
                     <li className="nav-item active">
-                        <a class="nav-link" href='/schema-link'>Schema Linking</a>
+                        <button className="nav-link" onClick={() => changePath('/schema-link')}>Schema Linking</button>
                     </li>
                 </ul>
-                <button type="button" className="btn btn-outline-danger btn-sm" onClick={doReset}>Reset</button> 
+                <button type="button" className="btn btn-outline-danger btn-sm" onClick={() =>  window.location.href = '/'}>Reset</button> 
             </div>
         </nav>
-        {window.location.pathname === '/' && <HomeContent/>}
-        {window.location.pathname === '/schema-link' && <Details/>}
+        {currentPage === '/schema-link' ? <Details/> : <HomeContent/>}
     </div>
     );
 }
