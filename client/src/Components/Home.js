@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import HomeContent from './HomeContent';
 import Details from './Details';
+import Query from './Query';
 
 function Home() {
     const [currentPage, setCurrentPage] = useState('/');
 
     const changePath = (page) => {
         setCurrentPage(page);
-        console.log(currentPage)
     };
 
     return (
@@ -22,11 +22,14 @@ function Home() {
                     <li className="nav-item active">
                         <button className="nav-link" onClick={() => changePath('/schema-link')}>Schema Linking</button>
                     </li>
+                    <li className="nav-item active">
+                        <button className="nav-link" onClick={() => changePath('/query')}>Query</button>
+                    </li>
                 </ul>
                 <button type="button" className="btn btn-outline-danger btn-sm" onClick={() =>  window.location.href = '/'}>Reset</button> 
             </div>
         </nav>
-        {currentPage === '/schema-link' ? <Details/> : <HomeContent/>}
+        {currentPage === '/schema-link' ? <Details/> : ( currentPage === '/query' ? <Query/> : <HomeContent/>)}
     </div>
     );
 }

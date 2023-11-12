@@ -32,11 +32,6 @@ const Form = () => {
         <input className="form-control p-1" type="text" placeholder="SQL Query" aria-label="Search" onChange={enteredInputHandler}></input>
         <button className="btn btn-outline-success btn-sm m-2" type="submit">Search</button>
       </form>
-      {/* <form onSubmit={submitHandler}>
-        <input type="text" onChange={enteredInputHandler}></input>
-        <button>Search</button>
-      </form> */}
-      {/* <div>{resultAgainstQuery}</div> */}
       <tbody>
         {resultAgainstQuery.map((item) => (
           <tr key={item.id}>
