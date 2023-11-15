@@ -12,6 +12,7 @@ models/text-davinci-003/__pycache__
 
 models/slsql/corenlp/
 models/slsql/output/
+models/slsql/pretrained_model/hard/pytorch_model.bin
 
 client/node_modules
 client/build

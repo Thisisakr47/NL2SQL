@@ -16,6 +16,9 @@ Code and annotation for the EMNLP 2020 paper ["Re-examining the Role of Schema L
 ```
 
 ## Environment
+
+Better use a **conda** enviroment to avoid any version conflicts
+
 Install some needed packages.
 ```
 pip install -r requirements.txt
@@ -24,6 +27,15 @@ Download Stanford CoreNLP 3.9.2 from [the official website](https://stanfordnlp.
 
 Download the Spider dataset and decompress it under the `data/` folder.
 
+## Pre-Trained Model
+Pre-trained model of *hard* variant can be accessed from [here](https://drive.google.com/drive/folders/1L5GqwbDUdE-_C4NpNxV7q6Kmcu1gfj8N?usp=sharing).
+
+Download the binary file and decompress it under the `pretrained_model/hard` folder.
+
+This folder contains weights for the below model but with **25 epochs**.
+
+The final predictions obtained from the above model is present under `final_evaluation` folder.
+
 ## Pre-processing
 Run the following command to preprocess the corpus and annotation.
 ```
@@ -31,6 +43,9 @@ sh preprocess.sh
 ```
 
 ## Training
+
+Takes about **30-40 minutes** per epoch on **T4 GPU 16GB**.
+
 Train the *default* model:
 ```
 python model/run.py --do_train --output_dir="output/default"
@@ -76,6 +91,9 @@ We only use `id` and `type` information in the SLSQL implementation. You may exp
 ### Release Log
 **2020-11-24:**  
 v1.0.0 (compatible with the current version of Spider)
+
+**2023-11-16:**<br>
+v1.0.0 (compatible with the current version of Spider) and everything works fine
 
 ## Model Schematic
 Here is a schematic diagram of the *hard* variant, which can help understand the model architecture.
